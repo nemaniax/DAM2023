@@ -1,0 +1,83 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente de texto principal */
+    margin: 0; /* Eliminamos los márgenes predeterminados del cuerpo */
+    padding: 0; /* Eliminamos el relleno predeterminado del cuerpo */
+    background-image: url(../img/conding-course.png);
+}
+
+/* Contenedor principal */
+body > header,
+body > section,
+body > aside,
+body > footer {
+    display: flex; /* Usamos el modelo de caja flexible para estos elementos */
+    justify-content: center; /* Centramos horizontalmente los elementos hijos */
+    align-items: center; /* Centramos verticalmente los elementos hijos */
+    /*height: 100vh; /* El 100% de la altura de la ventana gráfica (viewport height) */
+}
+
+/* Estilos del encabezado */
+header {
+    flex-direction: column; /* Cambiamos la dirección de los elementos hijos a columna */
+    text-align: center; /* Centramos el texto horizontalmente */
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color de texto del encabezado */
+    padding: 20px; /* Espaciado interno en el encabezado */
+   /*background-image: url(../img/conding-course.png);*/
+}
+
+/* Estilos de la navegación en el encabezado */
+nav ul {
+    list-style: none; /* Quitamos los puntos de lista */
+    padding: 0; /* Quitamos el relleno predeterminado de la lista */
+}
+
+nav ul li {
+    display: inline; /* Mostramos los elementos de lista en línea (horizontalmente) */
+    margin-right: 20px; /* Espacio entre elementos de lista */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Eliminamos el margen derecho del último elemento de lista */
+}
+
+nav a {
+    text-decoration: none; /* Quitamos la decoración de enlace subrayado */
+    color: #fff; /* Color del texto de enlace */
+    font-weight: bold; /* Hacemos que el texto del enlace sea negrita */
+}
+
+/* Estilos del contenido principal */
+section {
+    flex-direction: column; /* Cambiamos la dirección de los elementos hijos a columna */
+    text-align: center; /* Centramos el texto horizontalmente */
+    background-color: #f0f0f0; /* Color de fondo del contenido principal */
+    padding: 20px; /* Espaciado interno en el contenido principal */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+section img {
+    max-width: 100%; /* La imagen se ajusta al ancho del contenedor padre */
+    height: auto; /* La altura de la imagen se ajusta automáticamente */
+}
+
+/* Estilos de la barra lateral */
+aside {
+    flex-direction: column; /* Cambiamos la dirección de los elementos hijos a columna */
+    text-align: center; /* Centramos el texto horizontalmente */
+    background-color: #f0f0f0; /* Color de fondo de la barra lateral */
+    padding: 20px; /* Espaciado interno en la barra lateral */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos del pie de página */
+footer {
+    flex-direction: column; /* Cambiamos la dirección de los elementos hijos a columna */
+    text-align: center; /* Centramos el texto horizontalmente */
+    background-color: #333; /* Color de fondo del pie de página */
+    color: #fff; /* Color de texto del pie de página */
+    padding: 20px; /* Espaciado interno en el pie de página */
+}

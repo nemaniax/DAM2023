@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Mejorado</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container"> <!-- Contenedor principal del formulario -->
+        <h1>Formulario de Contacto</h1> <!-- Encabezado del formulario -->
+
+        <form> <!-- Elemento de formulario -->
+            <!-- Grupo de entrada de datos para el campo "Nombre" -->
+            <div class="input-group">
+                <label for="nombre">Nombre:</label> <!-- Etiqueta del campo -->
+                <input type="text" id="nombre" name="nombre" required> <!-- Campo de entrada de texto con atributo "required" -->
+            </div>
+
+            <!-- Grupo de entrada de datos para el campo "Correo Electrónico" -->
+            <div class="input-group">
+                <label for="email">Correo Electrónico:</label> <!-- Etiqueta del campo -->
+                <input type="email" id="email" name="email" required> <!-- Campo de entrada de correo electrónico con atributo "required" -->
+            </div>
+
+            <!-- Grupo de entrada de datos para el campo "Mensaje" -->
+            <div class="input-group">
+                <label for="mensaje">Mensaje:</label> <!-- Etiqueta del campo -->
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea> <!-- Área de texto con atributo "required" -->
+            </div>
+
+            <!-- Botón de envío del formulario -->
+            <div class="submit-button">
+                <input type="submit" value="Enviar"> <!-- Botón de envío del formulario -->
+            </div>
+        </form>
+
+        <!-- Texto sobre las características de HTML5 -->
+        <p>Estas características hacen que la creación y validación de formularios sea más fácil y accesible en HTML5.</p>
+    </div>
+
+            <!-- Texto de explicación sobre el formulario -->
+            <p>Comentarios:</p>
+            <ul>
+                <li>El elemento &lt;form&gt;: HTML5 introduce el elemento &lt;form&gt; que se utiliza para crear formularios web. Es un contenedor para campos de entrada y otros elementos relacionados con formularios.</li>
+                <li>Atributo "required": En cada campo de entrada (nombre, correo electrónico y mensaje), se utiliza el atributo "required". Esto indica que esos campos son obligatorios y no se puede enviar el formulario si están vacíos.</li>
+                <li>Tipo de entrada "email": El campo de correo electrónico utiliza el tipo de entrada "email", que ayuda a los navegadores a validar automáticamente si el contenido es una dirección de correo electrónico válida.</li>
+                <li>Etiquetas (&lt;label&gt;): Se utilizan etiquetas &lt;label&gt; para describir los campos de entrada. Esto mejora la accesibilidad y la usabilidad del formulario, ya que los usuarios pueden hacer clic en la etiqueta para enfocar el campo correspondiente.</li>
+                <li>Área de texto (&lt;textarea&gt;): Se utiliza el elemento &lt;textarea&gt; para el campo "Mensaje". El atributo "rows" se utiliza para especificar el número de filas visibles en el área de texto.</li>
+                <li>Botón de envío (&lt;input type="submit"&gt;): El botón de envío permite al usuario enviar el formulario. El texto del botón es "Enviar". Cuando se hace clic en este botón, el navegador intentará enviar el formulario.</li>
+            </ul>
+            <p>En resumen, estas son algunas de las novedades de HTML5 en este formulario:</p>
+            <ul>
+                <li>El uso de etiquetas &lt;label&gt; para describir los campos.</li>
+                <li>El atributo "required" para hacer campos obligatorios.</li>
+                <li>El tipo de entrada "email" para la validación automática del correo electrónico.</li>
+                <li>El uso de &lt;textarea&gt; para campos de texto más largos.</li>
+            </ul>
+            <p>Estas características hacen que la creación y validación de formularios sea más fácil y accesible en HTML5.</p>
+        </div>
+</body>
+</html>

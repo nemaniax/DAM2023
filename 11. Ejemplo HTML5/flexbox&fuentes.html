@@ -1,0 +1,140 @@
+<!--FLEX BOX
+
+    Flexbox tiene por defecto como eje principal por defecto la fila (row) o eje x
+    De esta forma los elementos se posicionan de izquierda a derecha por defecto
+    Y es modificando Justify-content como puedo ponerlos (Segun si es column o row se inverte)
+    a la izquierda (flex-start) derecha (flex-end).
+    Si yo cambio flex-direction por column. En este caso iran de arriba hacia abajo.
+
+    Otros calores importantes: space-around / space between;
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FLEX BOX & FONTS</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <!--Vincular fuente desde google fonts en html-->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+        <style>
+            
+            /*Vincular fuente desde google fonts en css*/
+            @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+            /*Vincular fuente desde carpeta fuentes*/
+            
+            @font-face {
+            font-family: "JosefinSans";
+            src: url("fonts/JosefinSans-Italic-VariableFont_wght.ttf");
+            }
+            body{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            p{
+                width: 50%;
+            }
+            
+            h1{
+                font-family:'Josefin Sans', sans-serif;
+            }
+            
+            pre{
+                font-family: "JosefinSans";
+            }
+
+            .contenedor_parrafo_horizontal img{
+
+                width: 30%;
+                margin: 2%;
+                
+            }
+
+            .contenedor_parrafo_vertical img{
+                width: 20%;
+                margin: 2%;
+            }
+
+            .contenedor_simple{
+                background-color: khaki;
+                height: 50vh;
+                width: 90%;
+                margin: 5%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center; 
+                /* (Se invierte según el flex direction)Se encarga de centrar los elementos en el eje principal o X del 
+                contenedor. El eje principal es una fila
+                por lo que esto hace que se quede centrado arriba del 
+                contenedor;*/
+                align-items: center;/* (Se invierte según el flex direction) Esto centra en el eje secudario Y o columna*/
+            }
+
+            .contenedor_parrafo_vertical{
+                background-color: rgb(119, 255, 149);
+                height: 50vh;
+                margin: 5%;
+                width: 90%;
+                flex-direction: column; /*Situa los elementos uno debajo del otro*/
+                display: flex;
+                justify-content: center; 
+                /* Se encarga de centrar los elementos en el eje principal o X del 
+                contenedor. El eje principal es una fila
+                por lo que esto hace que se quede centrado arriba del 
+                contenedor;*/
+                align-items: center;
+                /*Esto centra en el eje secudario Y o columna*/
+            }
+
+            .contenedor_parrafo_horizontal{
+                background-color: rgb(221, 119, 255);
+                height: 50vh;
+                margin: 5%;
+                width: 90%;
+                flex-direction: row; /* opción por defecto. Situa los elementos uno al lado del otro*/
+                display: flex;
+                justify-content: center; 
+                /* Si escribo flex-start se posiciona a la izquierda y 
+                si escribo flex-end se posiciona al final.*/
+                align-items: center;/*Esto centra en el eje secudario Y o columna*/
+            }
+
+
+
+        </style>
+
+    </head>
+    <body>
+        
+        <div class="contenedor_simple">
+            <h1>Céntrame</h1>
+        </div>
+
+        <div class="contenedor_parrafo_vertical">
+            <h1>Céntrame</h1>
+            <img src="img/conding-course.png" alt="Una imagen descriptiva"> <!-- Inclusión de una imagen con texto alternativo -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, blanditiis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, blanditiis.</p>
+        </div>
+
+        <div class="contenedor_parrafo_horizontal">
+            <h1>Céntrame</h1>
+            <img src="img/conding-course.png" alt="Una imagen descriptiva"> <!-- Inclusión de una imagen con texto alternativo -->
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, blanditiis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, blanditiis.</p>
+        </div>
+
+        <pre>
+                My Bonnie lies over the ocean.
+          
+            My Bonnie lies over the sea.
+          
+                My Bonnie lies over the ocean.
+          
+            Oh, bring back my Bonnie to me.
+          </pre>
+
+    </body>
+</html>

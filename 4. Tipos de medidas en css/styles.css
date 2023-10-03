@@ -1,0 +1,50 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%; /* Utilizando porcentaje para el ancho del contenedor */
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Estilos para diferentes unidades de medida */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Utilizando unidades de medida */
+li:nth-child(1) {
+    font-size: 20px; /* Píxeles (px) */
+}
+
+li:nth-child(2) {
+    font-size: 150%; /* Porcentaje (%) */
+}
+
+li:nth-child(3) {
+    font-size: 4vw; /* Viewport Width (vw) */
+}
+
+li:nth-child(4) {
+    font-size: 6vh; /* Viewport Height (vh) */
+}
+
+li:nth-child(5) {
+    font-size: 2em; /* Em (em) */
+}
+
+li:nth-child(6) {
+    font-size: 1.5rem; /* Rem (rem) */
+}

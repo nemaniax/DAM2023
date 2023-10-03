@@ -1,0 +1,134 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML5 -->
+<html lang="en"> <!-- Inicio del documento HTML -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuración de la vista en dispositivos móviles -->
+    <title>Mi Página Web</title> <!-- Título de la página -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        
+        .articulos{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main{
+            width: 70%;
+            float: left;
+        }
+
+        aside{
+            width: 25%;
+            float: left;
+        }
+        footer{
+            width: 100%;
+        }
+
+        header {
+        width: 100vw;
+        }   
+
+         /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+         @media screen and (max-width: 600px) {
+            section {
+                width: 100%;
+            }
+            main{
+                width: 100%;
+            }
+            aside{
+                width: 100%;
+            }
+            .articulos{
+                width: 100%;
+            }
+            }
+
+
+                     /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+         @media screen and (max-width: 800px) {
+
+            main{
+                width: 100%;
+            }
+            aside{
+                width: 100%;
+            }
+           
+            }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bienvenido a mi sitio web</h1> <!-- Encabezado principal -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li> <!-- Enlace a la página de inicio -->
+                <li><a href="#">Acerca de</a></li> <!-- Enlace a la página "Acerca de" -->
+                <li><a href="#">Contacto</a></li> <!-- Enlace a la página de contacto -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+                <h2>Contenido Principal</h2>
+                <p>Este es el contenido principal de mi página web.</p>
+                <div class="articulos">
+                    <article>
+                        <h2>Título artículo</h2>
+                        <img src="img/conding-course.png" alt="Una imagen descriptiva"> <!-- Inclusión de una imagen con texto alternativo -->
+                        <p>Este es el contenido principal de mi página web.</p>
+                    </article>
+                    <article>
+                        <h2>Título artículo</h2>
+                        <img src="img/conding-course.png" alt="Una imagen descriptiva"> <!-- Inclusión de una imagen con texto alternativo -->
+                        <p>Este es el contenido principal de mi página web.</p>
+                    </article>
+                    <article>
+                        <h2>Título artículo</h2>
+                        <img src="img/conding-course.png" alt="Una imagen descriptiva"> <!-- Inclusión de una imagen con texto alternativo -->
+                        <p>Este es el contenido principal de mi página web.</p>
+                    </article> 
+                </div>  
+        </section>
+    
+        <section>
+            <h2>Contenido Principal</h2>
+            <p>Este es el contenido principal de mi página web.</p>
+            <div class="articulos">
+            <article>
+                <h2>Título artículo</h2>
+                <img src="img/conding-course.png" alt="Una imagen descriptiva"> <!-- Inclusión de una imagen con texto alternativo -->
+                <p>Este es el contenido principal de mi página web.</p>
+            </article>
+            <article>
+                <h2>Título artículo</h2>
+                <img src="img/conding-course.png" alt="Una imagen descriptiva"> <!-- Inclusión de una imagen con texto alternativo -->
+                <p>Este es el contenido principal de mi página web.</p>
+            </article>
+            <article>
+                <h2>Título artículo</h2>
+                <img src="img/conding-course.png" alt="Una imagen descriptiva"> <!-- Inclusión de una imagen con texto alternativo -->
+                <p>Este es el contenido principal de mi página web.</p>
+            </article>        
+        </div>
+        </section>
+    </main>
+    <aside>
+        <h3>Barra lateral</h3>
+        <p>Información adicional se muestra aquí.</p>
+    </aside>
+    <footer>
+        <p>Derechos de autor &copy; 2023 Mi Sitio Web</p> <!-- Pie de página con símbolo de copyright -->
+    </footer>
+</body>
+
+</html> <!-- Fin del documento HTML -->

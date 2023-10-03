@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    background-image: url("img/double-world.png");
+    background-size: cover;
+    background-position: center;
+}
+header{
+    background-color: #ffffff;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+nav a{
+    color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+
+.form-register {
+    max-width: 400px; /* Establece un ancho máximo */
+    width: 100%; /* Hace que el formulario ocupe el ancho completo del contenedor padre */
+    background-color: #24303c;
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 7px 13px 37px black;
+}
+
+
+.form-group,
+.form-group-radio,
+.form-group-checkbox {
+    width: 100%;
+    background-color: #24303c;
+    padding: 2%;
+    border-radius: 4px;
+    margin-bottom: 2%;
+    font-size: 1em;
+    color: white;
+}
+
+
+.form-register p {
+    height: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: aliceblue;
+}
+
+.form-register a {
+    color: #296cff;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: #79a4ff;
+    text-decoration: underline;
+}
+
+
+
+.form-register .boton {
+    background-color: #e87121;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    margin: 12px 0;
+    font-size: 16px;
+    color: white;
+}
+
+.form-register .boton:hover {
+    background-color: #256aff;
+}
+
+.form-register .boton:active {
+    background-color: #e5b815;
+    color: black;
+}
+
+label {
+    display: block;
+    margin-bottom: 2%;
+    font-size: 1em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+    width:100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="date"]{
+    width:100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos específicos para la pregunta "¿estás dormido?" */
+.form-group-radio {
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Cambiamos a fila para poner el input y la etiqueta en la misma línea */
+    margin-bottom: 15px;
+}
+
+.form-group-radio label {
+    margin-right: 10px; /* Espaciado entre el input y la etiqueta */
+}
+
+/* Estilos específicos para el checkbox de "Términos y condiciones" */
+.form-group-checkbox {
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* Cambiamos a fila para poner el input y la etiqueta en la misma línea */
+    margin-bottom: 15px;
+}
+
+.form-group-checkbox label {
+    margin-left: 10px; /* Espaciado entre el checkbox y el texto de "Términos y condiciones" */
+}
+
+
+footer{
+    height: 200px;
+    background-color: black;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer p{
+    font-size: 20px;
+    color: white;
+    opacity: 1;
+}
+
+@media (max-width: 680px) {
+    .form-register{
+        width: 90%;
+    }
+}

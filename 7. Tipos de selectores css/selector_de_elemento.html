@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores Combinadores</title>
+    <style>
+        /* Selector de elemento descendiente */
+        div p {
+            color: blue;
+        }
+        /* Este selector selecciona todos los elementos <p> que están dentro de un <div>.
+           En este caso, cambia el color del texto de los párrafos dentro de un div a azul.
+        */
+
+        /* Selector de elemento directo */
+        ul > li {
+            list-style: square;
+        }
+        /* Este selector selecciona todos los elementos <li> que son hijos directos de un <ul>.
+           Cambia el estilo de lista de los elementos de lista que son hijos directos de un ul a "square" (viñetas cuadradas).
+        */
+
+        /* Selector de elemento hermano adyacente */
+        h2 + p {
+            font-weight: bold;
+        }
+        /* Este selector selecciona todos los elementos <p> que son hermanos adyacentes de un <h2>.
+           Cambia el peso de fuente de los párrafos que siguen inmediatamente a un encabezado <h2> a negrita.
+        */
+
+        /* Selector de elemento hermano general */
+        p ~ a {
+            text-decoration: underline;
+        }
+        /* Este selector selecciona todos los elementos <a> que son hermanos generales de un <p>.
+           Cambia la decoración de texto de los enlaces que son hermanos de un párrafo <p> a subrayado.
+        */
+
+        /* Selector de elemento descendiente y clase */
+        div .destacado {
+            background-color: yellow;
+        }
+        /* Este selector selecciona todos los elementos con la clase "destacado" que están dentro de un <div>.
+           Cambia el color de fondo de los elementos con la clase "destacado" dentro de un div a amarillo.
+        */
+
+        /* Selector de hijo directo y clase */
+        ul > .importante {
+            font-weight: bold;
+        }
+        /* Este selector selecciona todos los elementos con la clase "importante" que son hijos directos de un <ul>.
+           Cambia el peso de fuente de los elementos con la clase "importante" que son hijos directos de un ul a negrita.
+        */
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Selectores Combinadores</h1>
+
+    <div>
+        <p>Este es un párrafo dentro de un div.</p>
+    </div>
+    <!-- El párrafo dentro del div se vuelve azul debido al selector de elemento descendiente. -->
+
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+    </ul>
+    <!-- Los elementos de lista dentro del ul se muestran con viñetas cuadradas debido al selector de elemento directo. -->
+
+    <h2>Título 2</h2>
+    <p>Párrafo 1</p>
+    <p>Párrafo 2</p>
+    <a href="#">Enlace 1</a>
+    <a href="#">Enlace 2</a>
+    <!-- El segundo párrafo después del encabezado H2 se muestra en negrita debido al selector de elemento hermano adyacente.
+         Los enlaces que son hermanos generales de los párrafos se subrayan debido al selector de elemento hermano general.
+    -->
+
+    <div>
+        <p class="destacado">Este párrafo tiene una clase.</p>
+    </div>
+    <!-- El párrafo con la clase "destacado" dentro del div tiene un fondo amarillo debido al selector de elemento descendiente y clase. -->
+
+    <ul>
+        <li class="importante">Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+    <!-- El primer elemento de lista con la clase "importante" que es hijo directo del ul se muestra en negrita debido al selector de hijo directo y clase. -->
+
+
+   <!--Los selectores en CSS se llaman de acuerdo a su funcionalidad y la forma en que seleccionan elementos en el documento HTML. Aquí tienes una explicación de los nombres y por qué se llaman así:
+
+        Selector de Elemento Descendiente: Se llama así porque selecciona elementos que son descendientes de otro elemento en la jerarquía del documento HTML. Por ejemplo, div p selecciona todos los elementos <p> que son descendientes de un <div>.
+        
+        Selector de Elemento Directo: Este selector se llama así porque selecciona elementos que son hijos directos de otro elemento, no solo descendientes. El símbolo > se utiliza para indicar esta relación. Por ejemplo, ul > li selecciona todos los elementos <li> que son hijos directos de un <ul>.
+        
+        Selector de Elemento Hermano Adyacente: Este selector se llama así porque selecciona un elemento que es un hermano adyacente de otro. El signo + se utiliza para indicar esta relación. Por ejemplo, h2 + p selecciona todos los elementos <p> que son hermanos adyacentes de un <h2>.
+        
+        Selector de Elemento Hermano General: Este selector se llama así porque selecciona elementos que son hermanos generales (no necesariamente adyacentes) de otro elemento. El símbolo ~ se utiliza para indicar esta relación. Por ejemplo, p ~ a selecciona todos los elementos <a> que son hermanos generales de un <p>.
+        
+        Selector de Elemento Descendiente y Clase: Este selector combina la selección de elementos descendientes con la selección por clase. Se utiliza para seleccionar elementos con una clase específica que son descendientes de otro elemento. Por ejemplo, div .destacado selecciona elementos con la clase "destacado" que son descendientes de un <div>.
+        
+        Selector de Hijo Directo y Clase: Este selector combina la selección de hijos directos con la selección por clase. Se utiliza para seleccionar elementos con una clase específica que son hijos directos de otro elemento. Por ejemplo, ul > .importante selecciona elementos con la clase "importante" que son hijos directos de un <ul>.-->
+        
+        Estos nombres se utilizan para describir claramente cómo funcionan estos selectores y la relación que establecen entre los elementos en el documento HTML.</p>
+
+
+</body>
+</html>

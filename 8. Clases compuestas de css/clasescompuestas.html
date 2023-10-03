@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Clases Compuestas</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        /* Clases base */
+        .box {
+            width: 200px;
+            height: 100px;
+            border: 1px solid #000;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Clases compuestas */
+        .box.blue {
+            background-color: #007bff; /* Fondo azul */
+            color: #fff; /* Texto blanco */
+        }
+
+        .box.red {
+            background-color: #ff0000; /* Fondo rojo */
+            color: #fff; /* Texto blanco */
+        }
+
+        .box.rounded {
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        .box.large {
+            font-size: 24px; /* Texto más grande */
+        }
+    </style>
+</head>
+<body>
+    <h2>Ejemplo de Clases Compuestas</h2>
+
+    <div class="box blue">Caja Azul</div>
+    <div class="box red">Caja Roja</div>
+    <div class="box blue rounded">Caja Azul con Bordes Redondeados</div>
+    <div class="box red large">Caja Roja con Texto Grande</div>
+</body>
+</html>

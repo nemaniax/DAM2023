@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamaños de Fuente en CSS</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos CSS -->
+</head>
+<body>
+
+    <main>
+        <h1>Tamaños de Fuente en CSS</h1>
+
+        <!-- Tamaño de Fuente en Píxeles (px) -->
+        <p class="texto-pixeles">Este es un ejemplo de texto con tamaño en píxeles (24px).</p>
+        <p>El tamaño de fuente en píxeles (px) es una unidad fija. Esto significa que el tamaño de la fuente se mantiene constante independientemente de otros factores, como el tamaño de la ventana del navegador o el ajuste de accesibilidad del usuario. Se utiliza principalmente cuando se necesita un control preciso sobre el tamaño de la fuente.</p>
+
+        <!-- Tamaño de Fuente en Em (em) -->
+        <p class="texto-em">Este es un ejemplo de texto con tamaño en em (1.5em).</p>
+        <p>El tamaño de fuente en em (em) es una unidad relativa que se basa en el tamaño de fuente del elemento padre. Por ejemplo, si el tamaño de fuente del elemento padre es 16px y estableces el tamaño de fuente en 1.5em, el texto tendrá un tamaño de 24px (1.5 * 16px). Es útil para crear diseños escalables y responsivos.</p>
+
+        <!-- Tamaño de Fuente en Porcentaje (%) -->
+        <p class="texto-porcentaje">Este es un ejemplo de texto con tamaño en porcentaje (150%).</p>
+        <p>El tamaño de fuente en porcentaje (%) también es una unidad relativa que se basa en el tamaño de fuente del elemento padre. Un tamaño de fuente del 100% es equivalente al tamaño de fuente predeterminado del navegador. Un tamaño de fuente del 150% aumentará el tamaño en un 50% en relación con el tamaño predeterminado. Al igual que em, es útil para diseños responsivos.</p>
+
+        <!-- Explicación sobre el Elemento Padre y Tamaño Predeterminado -->
+        <p class="resumen">En CSS, las unidades de medida de tamaño de fuente, como em y porcentaje (%), son relativas al tamaño de fuente del <strong>elemento padre</strong>. Esto significa que el tamaño de fuente especificado se calcula en relación con el tamaño de fuente del elemento padre directo del elemento al que se aplica el estilo.</p>
+
+        <p class="resumen">Si no se especifica ningún tamaño de fuente inicial en el <strong>elemento padre</strong>, el navegador utiliza un <strong>tamaño de fuente predeterminado</strong>. Por lo general, este tamaño predeterminado es 16px en la mayoría de los navegadores. Por lo tanto, si no se establece ningún tamaño de fuente en el elemento padre y se utiliza em o porcentaje en un elemento secundario, se calculará en función del tamaño predeterminado de 16px.</p>
+
+    </main>
+
+</body>
+</html>

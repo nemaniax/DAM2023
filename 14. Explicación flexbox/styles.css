@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente de texto para el cuerpo del documento */
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+}
+
+h1 {
+    text-align: center; /* Centra el texto del encabezado h1 en el centro */
+    padding: 20px; /* Agrega espacio interno alrededor del encabezado h1 */
+}
+
+section {
+    margin: 20px; /* Agrega márgenes alrededor de todas las secciones */
+    padding: 20px; /* Agrega espacio interno dentro de todas las secciones */
+    border: 1px solid #ccc; /* Agrega un borde sólido de 1 píxel con color gris claro a todas las secciones */
+}
+
+/* Ejemplo 1: Contenedor con elementos flexibles */
+#ejemplo1 .flex-container {
+    display: flex; /* Utiliza Flexbox para el contenedor con clase "flex-container" dentro de la sección con id "ejemplo1" */
+}
+
+#ejemplo1 .item {
+    flex: 1; /* Hace que los elementos con clase "item" dentro de "ejemplo1" tengan igual flexibilidad y ocupen el mismo espacio */
+    border: 1px solid #333; /* Agrega un borde sólido de 1 píxel con color gris oscuro a los elementos con clase "item" */
+    padding: 10px; /* Agrega espacio interno de 10 píxeles a los elementos con clase "item" */
+    text-align: center; /* Centra el texto en los elementos con clase "item" */
+    margin: 5px; /* Agrega márgenes de 5 píxeles alrededor de los elementos con clase "item" */
+}
+
+/* Ejemplo 2: Alineación de elementos */
+#ejemplo2 .flex-container {
+    display: flex; /* Utiliza Flexbox para el contenedor con clase "flex-container" dentro de la sección con id "ejemplo2" */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    height: 200px; /* Establece la altura del contenedor en 200 píxeles */
+}
+
+/* Ejemplo 3: Reordenar elementos */
+#ejemplo3 .flex-container {
+    display: flex; /* Utiliza Flexbox para el contenedor con clase "flex-container" dentro de la sección con id "ejemplo3" */
+    flex-direction: column-reverse; /* Cambia la dirección de los elementos a columnas y los ordena en sentido inverso */
+}
+
+#ejemplo3 .item:nth-child(1) {
+    order: 3; /* Cambia el orden del primer elemento con clase "item" a 3 */
+}
+
+#ejemplo3 .item:nth-child(2) {
+    order: 1; /* Cambia el orden del segundo elemento con clase "item" a 1 */
+}
+
+#ejemplo3 .item:nth-child(3) {
+    order: 2; /* Cambia el orden del tercer elemento con clase "item" a 2 */
+}

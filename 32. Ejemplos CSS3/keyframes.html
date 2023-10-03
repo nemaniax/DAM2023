@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo keyframes</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            /* Agrega una transición suave para la propiedad transform */
+
+            /* Quita la propiedad "animation-name" del estilo inicial */
+        }
+
+        div:hover {
+            animation-name: example;
+            animation-duration: 4s;
+            transform: translate(20px, 20px) rotate(25deg);
+
+
+
+        }
+
+        div:active {
+            animation-name: pepe;
+            animation-duration: 1s;
+            cursor: pointer;
+        }
+
+
+        @keyframes example {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+
+        @keyframes pepe {
+            0% {
+                background-color: red;
+                border-radius: 50%;
+                scale: 1;
+            }
+
+            100% {
+                background-color: rgb(100, 0, 128);
+                border-radius: 50%;
+                scale: 1.2;
+            }
+        }
+
+
+        .movimiento {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+            animation-direction: alternate-reverse;
+        }
+
+        @keyframes move {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Animación CSS</h1>
+
+    <div></div>
+
+    <p><b>Nota:</b> Cuando la animación termina, vuelve a su estilo original.</p>
+
+    <div class="movimiento"></div>
+
+</body>
+
+</html>

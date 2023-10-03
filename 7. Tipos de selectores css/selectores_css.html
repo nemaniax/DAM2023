@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Selectores CSS</title>
+    <style>
+        /* Selector de Tipo */
+        p {
+            color: blue; /* Cambia el color del texto para todos los párrafos */
+        }
+
+        /* Selector de Clase */
+        .resaltado {
+            font-weight: bold; /* Aplica negrita a elementos con la clase 'resaltado' */
+        }
+
+        /* Selector de ID */
+        #titulo {
+            font-size: 24px; /* Cambia el tamaño de fuente del elemento con el ID 'titulo' */
+        }
+
+        /* Selector Universal */
+        * {
+            margin: 0;
+            padding: 0; /* Elimina márgenes y rellenos predeterminados para todos los elementos */
+        }
+
+        /* Selector de Atributo */
+        [href] {
+            text-decoration: none; /* Quita la decoración de texto para elementos con atributo 'href' */
+        }
+
+        /* Selector de Pseudoclase */
+        a:hover {
+            color: red; /* Cambia el color del texto de enlaces al pasar el mouse sobre ellos */
+        }
+
+        /* Selector de Pseudoelemento */
+        p::first-line {
+            font-style: italic; /* Aplica estilo en cursiva a la primera línea de todos los párrafos */
+        }
+
+        /* Combinadores */
+        ul > li {
+            font-weight: bold; /* Aplica negrita a elementos de lista que son hijos directos de 'ul' */
+        }
+
+        h2 + p {
+            text-transform: uppercase; /* Convierte el texto a mayúsculas para párrafos que siguen a un H2 */
+        }
+
+        h1 ~ p {
+            background-color: #ffffcc; /* Agrega un fondo amarillo a párrafos que siguen a un H1 */
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo">Tipos de Selectores CSS</h1>
+
+    <p>Este es un ejemplo de selector de tipo. Todos los párrafos se ven en azul.</p>
+
+    <p class="resaltado">Este es un ejemplo de selector de clase. Este párrafo está en negrita.</p>
+
+    <a href="#" title="Enlace de ejemplo">Enlace de ejemplo</a>
+
+    <p>Este es un ejemplo de selector universal. Se quitan márgenes y rellenos predeterminados para todos los elementos.</p>
+
+    <a href="#">Otro enlace</a>
+
+    <p>Este es un ejemplo de selector de atributo. Se elimina la decoración de texto para elementos con atributo "href".</p>
+
+    <ul>
+        <li>Elemento de lista 1</li>
+        <li>Elemento de lista 2</li>
+        <li>Elemento de lista 3</li>
+    </ul>
+
+    <h2>Título de la sección</h2>
+
+    <p>Este es un párrafo que sigue directamente a un encabezado H2. Se convierte en mayúsculas.</p>
+
+    <h1>Encabezado H1</h1>
+
+    <p>Este es un párrafo que sigue a un encabezado H1. Tiene un fondo amarillo debido al selector de hermanos (~).</p>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* Establecemos un estilo base para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente de texto principal */
+    margin: 0; /* Elimina los márgenes predeterminados del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    background-color: #f0f0f0; /* Color de fondo de la página */
+}
+
+/* Estilizamos el contenedor del formulario */
+.form-container {
+    background-color: #fff; /* Fondo blanco del contenedor del formulario */
+    max-width: 400px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centramos el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno dentro del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilizamos el título principal del formulario */
+h1 {
+    text-align: center; /* Centramos el texto horizontalmente */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilizamos el formulario y su contenido */
+form {
+    text-align: left; /* Alineamos el texto del formulario a la izquierda */
+}
+
+/* Estilizamos los grupos de entrada (por ejemplo, Nombre, Correo Electrónico) */
+.input-group {
+    margin-bottom: 20px; /* Espacio entre grupos de entrada */
+}
+
+/* Estilizamos las etiquetas (por ejemplo, Nombre:) */
+label {
+    display: block; /* Mostramos las etiquetas en una línea separada */
+    font-weight: bold; /* Hacemos que el texto de la etiqueta sea negrita */
+    margin-bottom: 5px; /* Espacio debajo de la etiqueta */
+}
+
+/* Estilizamos los campos de texto y áreas de texto */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 94%; /* Ancho completo dentro de su contenedor */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde con color gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilizamos las áreas de texto para que se puedan redimensionar verticalmente */
+textarea {
+    resize: vertical;
+}
+
+/* Estilizamos el botón de envío */
+.submit-button {
+    text-align: center; /* Centramos el texto del botón */
+}
+
+/* Estilizamos el botón de envío en estado normal */
+input[type="submit"] {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Eliminamos el borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiamos el cursor al pasar el ratón */
+    transition: background-color 0.3s; /* Animación de cambio de color al pasar el ratón */
+}
+
+/* Estilizamos el botón de envío al pasar el ratón sobre él */
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Nuevo color de fondo al pasar el ratón */
+}
+
+/*
+input[type="text"], input[type="email"], 
+textarea: Esto se conoce como un selector de atributo en CSS. 
+Está seleccionando todos los elementos input de tipo "text" y "email",
+ así como las áreas de texto textarea en el formulario. 
+ Esto permite aplicar estilos específicos a estos elementos.
+
+display: block;: Esto se aplica a las etiquetas label dentro del 
+.input-group. Hace que las etiquetas aparezcan en una línea separada, 
+lo que significa que cada etiqueta aparecerá debajo de su campo 
+de entrada correspondiente.
+
+transition: Esto se usa en input[type="submit"] para agregar 
+una transición suave (cambio gradual) en el color de fondo 
+cuando se pasa el cursor sobre el botón de envío. La propiedad 
+transition permite especificar una duración y una función de 
+temporización para la animación.
+
+*/

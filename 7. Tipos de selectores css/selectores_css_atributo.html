@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores de Atributo y Pseudoelementos</title>
+    <style>
+        /* Selector de Atributo [atributo="valor"] */
+        a[target="_blank"] {
+            color: blue; /* Cambia el color del texto de los enlaces con el atributo "target" igual a "_blank". */
+            font-weight: bold; /* Hace que el texto de los enlaces con el atributo "target" igual a "_blank" esté en negrita. */
+        }
+
+        /* Selector de Atributo [atributo^="valor"] (comienza con) */
+        a[href^="https"] {
+            color: green; /* Cambia el color del texto de los enlaces cuyo atributo "href" comienza con "https". */
+        }
+
+        /* Selector de Atributo [atributo$="valor"] (termina con) */
+        a[href$=".pdf"] {
+            text-decoration: underline; /* Subraya el texto de los enlaces cuyo atributo "href" termina con ".pdf". */
+        }
+
+        /* Selector de Atributo [atributo*="valor"] (contiene) */
+        a[href*="example"] {
+            font-style: italic; /* Aplica estilo itálico al texto de los enlaces cuyo atributo "href" contiene "example". */
+        }
+
+        /* Pseudoelemento ::before */
+        p::before {
+            content: "Antes del texto: "; /* Inserta contenido antes del texto de los párrafos seleccionados. */
+            font-weight: bold; /* Hace que el contenido insertado esté en negrita. */
+        }
+
+        /* Pseudoelemento ::after */
+        p::after {
+            content: " Después del texto."; /* Inserta contenido después del texto de los párrafos seleccionados. */
+            font-style: italic; /* Hace que el contenido insertado esté en itálico. */
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Selectores de Atributo y Pseudoelementos</h1>
+
+    <p><a href="https://www.ejemplo.com" target="_blank">Enlace externo</a></p>
+    <!-- El enlace "Enlace externo" tiene el atributo "target" igual a "_blank", por lo que cumple con el selector de atributo [target="_blank"]. -->
+
+    <p><a href="https://www.otroejemplo.com" target="_blank">Otro enlace externo</a></p>
+    <!-- El enlace "Otro enlace externo" también cumple con el selector de atributo [target="_blank"]. -->
+
+    <p><a href="documento.pdf">Documento PDF</a></p>
+    <!-- El enlace "Documento PDF" cumple con el selector de atributo [href$=".pdf"]. -->
+
+    <p><a href="example-page.html">Página de ejemplo</a></p>
+    <!-- El enlace "Página de ejemplo" cumple con el selector de atributo [href*="example"]. -->
+
+    <p>Este es un párrafo con contenido.</p>
+    <!-- Los párrafos sin enlaces no se ven afectados por los selectores de atributo. -->
+
+    <p>Este es otro párrafo con contenido.</p>
+</body>
+</html>

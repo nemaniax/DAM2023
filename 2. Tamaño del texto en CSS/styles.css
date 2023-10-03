@@ -1,0 +1,34 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    padding: 10%;
+}
+
+/* Tamaño de Fuente en Píxeles (px) */
+.texto-pixeles {
+    font-size: 24px; /* Tamaño de fuente en píxeles */
+    color: purple;
+}
+
+/* Tamaño de Fuente en Em (em) */
+.texto-em {
+    font-size: 1.5em; /* Tamaño de fuente en em */
+    color: rgb(218, 87, 5);
+}
+
+/* Tamaño de Fuente en Porcentaje (%) */
+.texto-porcentaje {
+    font-size: 150%; /* Tamaño de fuente en porcentaje */
+    color: rgb(0, 144, 93);
+}
+
+.resumen{
+    background-color: rgb(15, 211, 211);
+    padding: 20px;
+}
+

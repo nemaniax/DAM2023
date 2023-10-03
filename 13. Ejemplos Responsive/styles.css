@@ -1,0 +1,44 @@
+/* Estilos base para todos los dispositivos */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Media query para tablet (ancho de pantalla entre 768px y 1023px) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Estilos específicos para tablet */
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+/* Media query para móvil (ancho de pantalla menor o igual a 767px) */
+@media screen and (max-width: 767px) {
+    /* Estilos específicos para móvil */
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        display: block;
+        margin: 10px 0;
+    }
+}

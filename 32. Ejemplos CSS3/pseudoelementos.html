@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoemelentos</title>
+    <style>
+        h1 {
+            color: blueviolet;
+            font-size: 2ems;
+        }
+
+        p {
+            color: black;
+            font-size: 1.5em;
+        }
+
+        p::before {
+            content: "★ ";
+            color: gold;
+        }
+
+        h1::after {
+            content: " - Título";
+            color: #007bff;
+        }
+
+        p::first-line {
+            background-color: #8f8f8f;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1::first-letter {
+            font-size: 24px;
+            color: #ff0000;
+        }
+
+        /* Ejemplo 3: ::selection */
+        ::selection {
+            background-color: #ffff00;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Este es un título</h1>
+    <p>Este es un párrafo con una estrella antes del texto.
+        Esta es la primera línea de un párrafo. El resto del texto sigue aquí.
+        Esta es la primera línea de un párrafo. El resto del texto sigue aquí.</p>
+
+
+</body>
+
+</html>

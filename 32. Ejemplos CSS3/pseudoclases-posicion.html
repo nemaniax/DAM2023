@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Pseudoclases en CSS</title>
+    <style>
+        /* Seleccionar el primer párrafo de tipo <p> */
+        p:first-of-type {
+            background-color: #ff8a8a;
+            padding: 10px;
+        }
+
+        /* Seleccionar el último párrafo de tipo <p> */
+        p:last-of-type {
+            background-color: #ddf63a;
+            padding: 10px;
+            color: #09003e;
+            /* Agregar color de texto para asegurarte de que sea visible */
+
+        }
+
+        /* Seleccionar todos los párrafos de tipo <p> que son múltiplos de 3 */
+        p:nth-child(3n) {
+            background-color: #6c6cff;
+            padding: 10px;
+        }
+
+        /* Seleccionar todos los párrafos de tipo <p> que son múltiplos de 3 */
+        p:nth-child(odd) {
+            padding: 10px;
+            color: #a0b900;
+        }
+
+        p:nth-child(even) {
+            padding: 10px;
+            color: #b900a0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejemplos de Pseudoclases en CSS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore enim nobis ad sapiente voluptatibus harum
+        eligendi, cumque excepturi ullam aliquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod doloribus tempora cumque, voluptatibus
+        exercitationem maiores.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore suscipit minima laudantium reiciendis beatae
+        blanditiis ut minus numquam consectetur.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore suscipit minima laudantium reiciendis beatae
+        blanditiis ut minus numquam consectetur.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore suscipit minima laudantium reiciendis beatae
+        blanditiis ut minus numquam consectetur.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore suscipit minima laudantium reiciendis beatae
+        blanditiis ut minus numquam consectetur.
+    </p>
+
+    <p class="alternos">Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore suscipit minima laudantium
+        reiciendis beatae
+        blanditiis ut minus numquam consectetur.
+    </p>
+    <p class="alternos">Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore suscipit minima laudantium
+        reiciendis beatae
+        blanditiis ut minus numquam consectetur.
+    </p>
+    <p class="alternos">Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore suscipit minima laudantium
+        reiciendis beatae
+        blanditiis ut minus numquam consectetur.
+    </p>
+    <p class="alternos">Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore suscipit minima laudantium
+        reiciendis beatae
+        blanditiis ut minus numquam consectetur.
+    </p>
+    <p class="alternos">Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore suscipit minima laudantium
+        reiciendis beatae
+        blanditiis ut minus numquam consectetur.
+    </p>
+    <p class="alternos">Lorem ipsum dolor sit amet consectetur adipisicing elit. At labore suscipit minima laudantium
+        reiciendis beatae
+        blanditiis ut minus numquam consectetur.
+    </p>
+
+
+</body>
+
+</html>

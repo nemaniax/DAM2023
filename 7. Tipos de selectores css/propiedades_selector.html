@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecciones CSS</title>
+    <style>
+        /* Selectores de Tipo */
+        .tipo {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        /* Selectores de Clase */
+        .clase {
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
+        /* Selectores de ID */
+        #id {
+            background-color: #ccc;
+            padding: 20px;
+        }
+
+        /* Selectores de Atributo */
+        [atributo="valor"] {
+            background-color: #b8b8b8;
+            padding: 20px;
+        }
+
+        /* Selectores de Pseudoclase */
+        a:hover {
+            background-color: #a3a3a3;
+            padding: 20px;
+        }
+
+        /* Selectores de Pseudoelemento */
+        p::first-line {
+            background-color: #8f8f8f;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecciones CSS</h1>
+
+    <!-- Selectores de Tipo -->
+    <div class="tipo">
+        <h2>Selectores de Tipo</h2>
+        <p>Los selectores de tipo se utilizan para seleccionar elementos HTML según su nombre de etiqueta. Por ejemplo, este div se selecciona utilizando un selector de tipo.</p>
+    </div>
+
+    <!-- Selectores de Clase -->
+    <div class="clase">
+        <h2>Selectores de Clase</h2>
+        <p>Los selectores de clase permiten seleccionar elementos que tienen una clase específica asignada. En este caso, este div se selecciona utilizando un selector de clase.</p>
+    </div>
+
+    <!-- Selectores de ID -->
+    <div id="id">
+        <h2>Selectores de ID</h2>
+        <p>Los selectores de ID seleccionan elementos con un atributo "id" específico. Aquí, este div se selecciona utilizando un selector de ID.</p>
+    </div>
+
+    <!-- Selectores de Atributo -->
+    <div atributo="valor">
+        <h2>Selectores de Atributo</h2>
+        <p>Los selectores de atributo se utilizan para seleccionar elementos con un atributo y un valor específico. En este caso, este div se selecciona utilizando un selector de atributo.</p>
+    </div>
+
+    <!-- Selectores de Pseudoclase -->
+    <a href="#">Enlace</a>
+
+    <!-- Selectores de Pseudoelemento -->
+    <p>
+        <h2>Selectores de Pseudoelemento</h2>
+        <p>Los pseudoelementos seleccionan partes específicas de un elemento. Este párrafo se selecciona con un selector de pseudoelemento que agrega estilo a la primera línea.</p>
+    </p>
+</body>
+</html>

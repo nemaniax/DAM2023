@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Estilo para todos los elementos <a> que son descendientes de un <p> */
+        p a {
+            text-decoration: underline;
+            color: blue;
+        }
+
+        /* Estilo para todos los elementos <a> que son hijos directos de un <p> */
+        p > a {
+            background-color: lightcoral;
+            color: white;
+            padding: 3px 5px;
+            margin-left: 5px;
+        }
+
+        /* Estilo para todos los elementos <a> que son hermanos (mismo nivel de jerarquía) de un <p> */
+        p ~ a {
+            background-color: lightgreen;
+            color: black;
+            padding: 3px 5px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Texto dentro de un párrafo <a href="#">Enlace descendiente</a></p>
+        
+        <div>
+            <p><a href="#">Enlace hijo directo</a></p>
+        </div>
+        
+        <p>Texto antes del párrafo</p>
+        <a href="#">Enlace hermano 1</a>
+        <a href="#">Enlace hermano 2</a>
+        
+        <p>Texto después del párrafo</p>
+    </div>
+</body>
+</html>

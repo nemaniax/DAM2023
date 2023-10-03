@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades de Color en CSS</title>
+    <style>
+        /* Color de texto */
+        .texto-rojo {
+            color: red;
+        }
+
+        .texto-verde {
+            color: green;
+        }
+
+        /* Fondo de elementos */
+        .fondo-azul {
+            background-color: blue;
+            color: white; /* Cambia el color del texto para que sea legible sobre el fondo azul */
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .fondo-amarillo {
+            background-color: yellow;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Opacidad */
+        .opacidad-50 {
+            background-color: rgba(0, 128, 0, 0.5); /* Fondo verde con 50% de opacidad */
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Colores en formato hexadecimal */
+        .hexadecimal {
+            background-color: #FF5733; /* Color naranja (#FF5733) en formato hexadecimal */
+            padding: 10px;
+            margin-bottom: 20px;
+            
+        }
+
+        /* Colores en formato HSL (Hue, Saturation, Lightness) */
+        .hsl {
+            background-color: hsl(120, 100%, 50%); /* Verde brillante en formato HSL */
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Colores en formato RGB (Red, Green, Blue) */
+        .rgb {
+            background-color: rgb(255, 0, 0); /* Rojo en formato RGB */
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Enlaces a recursos útiles */
+        .referencias {
+            font-style: italic;
+            color: #007bff; /* Enlace azul (#007bff) */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Propiedades de Color en CSS</h1>
+
+    <p class="texto-rojo">El color de texto puede cambiarse con la propiedad <code>color</code>. Este texto es de color rojo.</p>
+    
+    <p class="texto-verde">Este texto es de color verde.</p>
+
+    <div class="fondo-azul">
+        <p>El color de fondo de un elemento se cambia con la propiedad <code>background-color</code>. Este párrafo tiene fondo azul.</p>
+    </div>
+
+    <div class="fondo-amarillo">
+        <p>Este párrafo tiene fondo amarillo.</p>
+    </div>
+
+    <div class="opacidad-50">
+        <p>La opacidad se puede aplicar usando valores RGBA. Este párrafo tiene un fondo verde con 50% de opacidad.</p>
+    </div>
+
+    <div class="hexadecimal">
+        <p>Los colores se pueden representar en formato hexadecimal (#RRGGBB). Este párrafo tiene un fondo de color naranja (#FF5733).</p>
+    </div>
+
+    <div class="hsl">
+        <p>Los colores también se pueden definir en formato HSL (Hue, Saturation, Lightness). Este párrafo tiene un fondo de color verde brillante en formato HSL.</p>
+    </div>
+
+    <div class="rgb">
+        <p>El formato RGB (Red, Green, Blue) es otra forma de definir colores. Este párrafo tiene un fondo de color rojo en formato RGB.</p>
+    </div>
+
+    <p class="referencias">Recursos útiles sobre colores en CSS:
+        <a href="https://www.w3schools.com/colors/" target="_blank">W3Schools</a>,
+        <a href="https://www.color-hex.com/" target="_blank">Color Hex</a>,
+        <a href="https://htmlcolorcodes.com/" target="_blank">HTML Color Codes</a>
+    </p>
+</body>
+</html>
